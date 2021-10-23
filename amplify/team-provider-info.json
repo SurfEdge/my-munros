@@ -10,6 +10,11 @@
       "StackName": "amplify-mymunros-dev-224942",
       "StackId": "arn:aws:cloudformation:ap-south-1:629685297760:stack/amplify-mymunros-dev-224942/6cfc2160-3425-11ec-b7da-0257c5b15a04",
       "AmplifyAppId": "d3hg3wy9hbsfoz"
+    },
+    "categories": {
+      "auth": {
+        "mymunrosba9d2572ba9d2572": {}
+      }
     }
   }
 }

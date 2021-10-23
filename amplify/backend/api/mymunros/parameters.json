@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "mymunros",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authmymunrosba9d2572ba9d2572",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
