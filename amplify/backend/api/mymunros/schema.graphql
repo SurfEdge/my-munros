@@ -1,20 +1,15 @@
-type Blog @model {
-  id: ID!
-  name: String!
-  posts: [Post] @connection(keyName: "byBlog", fields: ["id"])
-}
-
-type Post @model @key(name: "byBlog", fields: ["blogID"]) {
+type Munro @model {
   id: ID!
   title: String!
-  blogID: ID!
-  blog: Blog @connection(fields: ["blogID"])
-  comments: [Comment] @connection(keyName: "byPost", fields: ["id"])
+  description: String!
+  photos: [Photo] @connection(keyName: "byPhotos", fields: ["id"])
+  dateAdded: String!
+  dateWent: String!
 }
 
-type Comment @model @key(name: "byPost", fields: ["postID", "content"]) {
+type Photo @model @key(name: "byPhotos", fields: ["munroID"]) {
   id: ID!
-  postID: ID!
-  post: Post @connection(fields: ["postID"])
-  content: String!
+  image: String!
+  munroID: ID!
+  munro: Munro @connection(fields: ["munroID"])
 }
