@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import { Layout} from 'antd';
+import Navbar from './components/Navbar.js';
+import HeroSection from './components/HeroSection.js';
+import MunroList from './components/MunroList';
+const {Footer} =Layout;
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Layout className="layout">
+      <Navbar/>
+      <HeroSection/>
+      <MunroList />
+      <Footer>Ant Design ©2018 Created by Ant UED</Footer>
+    </Layout>
+
+    
+  )
 }
 
-export default App;
+
+
