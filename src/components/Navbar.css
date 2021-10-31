@@ -1,0 +1,26 @@
+.header {
+    background-color: #fff;
+    box-shadow: 5px 8px 24px 5px rgba(208, 216, 243, 0.6);
+    height: auto;
+}
+
+.mainBtn {
+    float: right;
+    margin: 1.8% 0;
+    font-weight: bolder;
+}
+
+.title {
+    color: '#000';
+    margin: 0.9% 0;
+}
+
+@media only screen and (max-width: 576px) {
+    .mainBtn {
+        margin: 10% 0;
+    }
+    .title {
+        font-size: 30px !important;
+        margin: 10% 0;
+    }
+}
